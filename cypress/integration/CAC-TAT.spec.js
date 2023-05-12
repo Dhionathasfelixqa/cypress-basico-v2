@@ -70,7 +70,11 @@ describe('Central de Atendimento ao Cliente TAT', function () {
 
     it('exibe mensagem de erro ao submeter o formulário sem preencher os campos obrigatórios', function () {
         cy.contains('button', 'Enviar').click()
-
+        cy.get('#email')
+            .type('dhionathas.felixgmail.com')
+            .should('have.value', 'dhionathas.felixgmail.com')
+            .clear()
+            .should('have.value', '')
         cy.get('.error strong').should('have.text', 'Valide os campos obrigatórios!')
     });
 
