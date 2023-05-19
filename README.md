@@ -16,7 +16,6 @@ Você pode rodar os testes simulando o desktop ou mobile.
 
 ## Desktop
 
-
 Execute npm test (ou npm t para a versão curta) para executar o teste no modo headless.
 
 Ou execute npm run cy:open para abrir o Cypress no modo interativo desktop.

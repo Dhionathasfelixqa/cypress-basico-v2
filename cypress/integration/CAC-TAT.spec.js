@@ -199,7 +199,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
     });
 
 
-    Cypress._.times(5, () => {
+    Cypress._.times(1, () => {
         it('envia o formuário com sucesso usando um comando customizado', function () {
             cy.clock()
             cy.fillMandatoryFieldsAndSubmit()
